@@ -92,3 +92,117 @@ h6 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* General Styling */
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 0.875rem;
+  color: var(--grey-neutral);
+  background-color: var(--cream-neutral);
+
+  /* for this project only */
+  display: grid;
+  grid-row-gap: 24px;
+  min-height: 100vh;
+  place-content: center;
+  margin: 1rem;
+}
+/* utilities */
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Button */
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.5rem;
+  /* padding: 0.75em 1.5em; */
+  padding: 1rem 2rem;
+  background-color: var(--green-primary-400);
+  color: var(--white-neutral);
+  font-weight: var(--fw-bold);
+}
+
+.button[data-icon="shopping-cart"]::before {
+  content: "";
+  width: 15px;
+  height: 16px;
+  background-image: url("../images/icon-cart.svg");
+}
+
+.button:is(:hover) {
+  background-color: var(--green-primary-700);
+}
+
+@media (max-width: 600px) {
+  .button {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Product Styles */
+.product {
+  --content-padding: 2rem;
+  --content-spacing: 1rem;
+
+  display: grid;
+  background-color: var(--white-neutral);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+@media (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.product__content {
+  display: grid;
+  gap: var(--content-spacing);
+  padding: var(--content-padding);
+}
+
+.product__category {
+  font-size: 0.75rem;
+  letter-spacing: 0.3125rem;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.product__title {
+  font-family: var(--ff-accent);
+  font-size: 2rem;
+  color: var(--black-neutral);
+  line-height: 100%;
+}
+
+p {
+  line-height: 160%;
+}
+
+.product__price {
+  font-family: var(--ff-accent);
+  font-size: 2rem;
+  color: var(--green-primary-400);
+  font-weight: var(--fw-bold);
+}
