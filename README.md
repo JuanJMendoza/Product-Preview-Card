@@ -22,13 +22,17 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Screenshot
+### Mobile
+![Screenshot 2025-06-26 at 1 41 46 PM](https://github.com/user-attachments/assets/b34d0774-65fd-42f9-b723-728d277d1b39)
 
-![](./screenshot.jpg)
+### Desktop
+![Screenshot 2025-06-26 at 1 41 01 PM](https://github.com/user-attachments/assets/edcbbad2-42fd-4690-8345-4754eade46e8)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/product-preview-card-Hpn_orziUb)
+- Live Site URL: [Add live site URL here](https://product-preview-card-seven-pink.vercel.app/)
 
 ## My process
 
